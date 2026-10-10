@@ -1,3 +1,23 @@
+body {
+  margin: 20px;
+  font-family: sans-serif;
+}
+
+ol,
+ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
 .square {
   background: #fff;
   color: #000;
@@ -15,6 +35,15 @@
   text-align: center;
 }
 
-.board-row {
+.square:focus {
+  outline: none;
+}
+
+.game {
   display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 20px;
 }
